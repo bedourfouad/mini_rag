@@ -8,8 +8,7 @@ from models import ResponseSignal
 import logging
 from .schemes.data import ProcessRequest
 from models.ProjectModel import ProjectModel
-from models.ChunkModel import ChunkModel
-from models.db_schemes import DataChunk
+
 
 logger = logging.getLogger('uvicorn.error')
 
