@@ -1,3 +1,4 @@
+
 from pydantic import BaseModel, Field, validator
 from typing import Optional
 from bson.objectid import ObjectId
@@ -24,3 +25,7 @@ class DataChunk(BaseModel):
                 "unique": False
             }
         ]
+    
+class RetrievedDocument(BaseModel):
+    text: str
+    score: float
